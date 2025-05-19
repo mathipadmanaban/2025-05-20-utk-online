@@ -446,7 +446,17 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+<p>
+Visit and complete three steps in the <a href="https://datacarpentry.org/ecology-workshop/setup-python-workshop.html">setup instructions for this Data Carpentry workshop</a>.
+</p>
+<p>
+Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please contact your host.
+<ul>
+  <li>For the first morning: spreadsheet software, such as LibreOffice, Google Sheets, or MS Excel. Please advise your organizer which is installed.</li>
+  <li>For the first afternoon: OpenRefine</li>
+  <li>For the second day: Python</li>
+</ul>
+</p>
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
@@ -459,21 +469,4 @@ to include the relevant installation instructions.
 {% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
-to obtain the software and data you will need to follow the lesson.
 {% endif %}
